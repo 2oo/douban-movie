@@ -1,0 +1,22 @@
+footer {
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+footer > img {
+  width: 48px;
+  height: 48px;
+  align-self: flex-end;
+  margin-right: 12px;
+}
+
+.info strong {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.info small {
+  display: block;
+  font-size: 14px;
+}

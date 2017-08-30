@@ -1,0 +1,22 @@
+.rank {
+  font-size: .72rem;
+  color: #aaa;
+  margin-top: .3rem;
+}
+
+.rank .star {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 1px;
+}
+
+.rank .gray {
+  background-image: url('/star-gray.png');
+}
+
+.rank .full {
+  background-image: url('/star-full.png')
+}
