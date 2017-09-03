@@ -2,3 +2,12 @@
   max-width: 650px;
   margin: 0 auto;
 }
+
+.Rating {
+  margin-top: .3rem;
+}
+
+.Rating .average {
+  font-size: .72rem;
+  color: #aaa
+}

@@ -1,22 +1,26 @@
-.rank {
-  font-size: .72rem;
-  color: #aaa;
-  margin-top: .3rem;
+.Rating {
+  display: inline-block;
 }
 
-.rank .star {
+.Rating > .stars {
+  margin-right: 3px;
+}
+
+.Rating > .average {
+}
+
+.Rating .star {
   display: inline-block;
   width: 10px;
   height: 10px;
-  background-repeat: no-repeat;
   background-size: cover;
   margin-right: 1px;
 }
 
-.rank .gray {
+.Rating .gray {
   background-image: url('/star-gray.png');
 }
 
-.rank .full {
+.Rating .full {
   background-image: url('/star-full.png')
 }

@@ -1,0 +1,37 @@
+#Introduction {
+  margin: 0;
+  display: flex;
+}
+
+#Introduction > figcaption {
+  margin-right: 24px;
+}
+
+#Introduction > img {
+  align-self: flex-start;
+  margin-top: 37px;
+}
+
+#Introduction h1 {
+  margin: 30px 0 5px;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+#Introduction #Rating .star {
+  width: 13px;
+  height: 13px;
+}
+
+#Introduction #Rating .average {
+  font-size: 15px;
+  color: #494949;
+}
+
+#Introduction .summary {
+  margin: 15px 0 0;
+  font-size: 14px;
+  color: #494949;
+  line-height: 1.6;
+}

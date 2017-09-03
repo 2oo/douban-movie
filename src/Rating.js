@@ -1,20 +1,31 @@
 import React from 'react'
 import './Rating.css'
 
-const Rating= ({average = 0, stars = 0}) => {
-  if (!average || !stars) { return <div className='rank'>暂无评分</div> }
-
-  let starGroup = new Array(5).fill('gray'),
-      n = 0
-  starGroup.fill('full', 0, stars)
+const Rating = props => {
+  let n = 0
+  let starArray = new Array(5).fill('gray')
+                              .fill('full', 0, Number(props.stars[0]))
   return (
-    <div className='rank'>
-      {starGroup.map(item =>(
-        <span key={n++} className={`star ${item}`}></span>
-      ))}
-      <span>{average}</span>
-    </div>
+    <span className='Rating'>
+      {
+        props.stars === '00'
+        ? null
+        : (<span className='stars'>
+          {starArray.map(item => (
+            <span key={n++} className={`star ${item}`}></span>
+          ))}
+        </span>)
+      }
+      <span className='average'>
+        {props.average ? props.average : '暂无评分' }
+      </span>
+    </span>
   )
+}
+
+Rating.defaultProps = {
+  average: 0,
+  stars: '00'
 }
 
 export default Rating

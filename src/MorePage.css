@@ -1,0 +1,47 @@
+#MorePage {
+  padding: 0 2%;
+}
+
+#MorePage > h1 {
+  font-weight: normal;
+  color: #494949;
+  margin: .67em 0 6px 15px;
+}
+
+#MorePage > .movies {
+  padding: 20px 0;
+}
+
+#MorePage .Movie {
+  margin: 0;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 33.33333%;
+  padding: 0 4% 20px;
+}
+
+#MorePage img {
+  width: 100%;
+}
+
+#MorePage figcaption {
+  font-size: 12px;
+  text-align: center;
+}
+
+#MorePage h3 {
+  font-size: 13px;
+  color: #494949;
+  margin: 5px 0 3px 0;
+}
+
+#MorePage .Rating {
+  color: #9b9b9b;
+}
+
+@media (min-width: 600px) {
+  #MorePage .Movie {
+    width: 20%;
+    padding: 0 16px;
+  }
+}

@@ -1,0 +1,62 @@
+.Topic {
+  overflow: hidden;
+  margin: 10px 0 40px;
+}
+
+.Topic > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.12rem;
+}
+
+.Topic > .items {
+  list-style-type: none;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  font-size: 0;
+  padding: 15px 0 30px;
+  margin-bottom: -30px;
+}
+
+.Topic .Movie {
+  margin: 0;
+  padding: 0 0 0 .48rem;
+  flex: 0 0 100px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.Topic .Movie:first-of-type {
+  padding-left: 1.12rem;
+}
+
+.Topic .Movie:last-of-type {
+  padding-right: 1.12rem;
+}
+
+.Topic h2, .Movie h3 {
+  color: #111;
+  font-weight: normal;
+  margin: 0;
+}
+
+.Topic h2 {
+  font-size: 1.06rem;
+}
+
+.Topic > header a {
+  font-size: .9rem;
+  color: #42bd56;
+  text-decoration: none;
+}
+
+.Movie h3 {
+  font-size: .94rem;
+  margin: .6rem 0 0 0;
+}
+
+.Movie .Rating {}
